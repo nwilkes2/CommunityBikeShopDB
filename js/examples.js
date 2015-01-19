@@ -140,30 +140,25 @@ $('.example-films .typeahead').typeahead(null, {
   source: films.ttAdapter(),
   templates: {
     suggestion: Handlebars.compile(
-      '<p><strong>{{name}}<span style="color:#fff">{{value}}</span></strong></p>'
+      '<p><strong>{{name}}<span style="color:#fff">~{{value}}~</span></strong></p>'
     )
   }
 });
 
 
-$('#location').bind('change', function(e)
-{
-
-document.getElementById("contact_id").value = '';
-$("#location").css('background-color','#faa');
-document.getElementById('add_button').disabled = true;
-});
 
 
 $('.tt-dropdown-menu div').bind('click', function(e)
 {
 
 document.getElementById('location').value = document.getElementById('location').value.trim();
-document.getElementById('contact_id').value = $(e.currentTarget).find('p strong span').html(); 
+document.getElementById('contact_id').value = $(e.target).html().split('~')[1]; 
 $("#location").css('background-color','#afa');
 document.getElementById('add_button').disabled = false;
 
-console.log( $(e.currentTarget).find('p strong span').html());
+console.log($(e.target).html());
+console.log($(e.target).html().split('~')[1]);
+
 });
 
 anExcitedSource = function(query, cb) {

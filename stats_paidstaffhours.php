@@ -63,7 +63,6 @@ $totalRows_Recordset2 = mysql_num_rows($Recordset2);
             <a href=\"stats_paidstaffhours_dailydetails.php?show=all\">(Show All)</a>"?>
           	</td>
 	  </tr>
-	  <tr><td><a href="https://docs.google.com/spreadsheetS/d/1t25-RdlGHwlOq38vaNMdpPfpE80YfgRM4ONmnnJbr-s/edit#gid=0">Employee Hours Varification Log</a></td></tr>
 	  <tr valign="top">
 	  	  <?php $row_Recordset2 = mysql_fetch_assoc($Recordset2) ?>
           <td align="left">Current Date: <?php echo $row_Recordset2['Date']; ?>, Pay Period Year: <?php echo $row_Recordset2['Year']; ?>, Quarter: <?php echo $row_Recordset2['Quarter']; ?>, Pay Period: <?php echo $row_Recordset2['PayPeriod']; ?>, Week: <?php echo $row_Recordset2['Week']; ?> </td>

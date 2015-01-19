@@ -165,7 +165,7 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "FormEdit")) {
 
 <input size=35 autocomplete="off" autofocus="autofocus" class="typeahead form-control" id="location" name="zp" tabindex="1" type="search" role="textbox" aria-autocomplete="list" aria-haspopup="true">
 
-<input type=hidden id=contact_id name=contact_id>
+<input type=text id=contact_id name=contact_id>
 </div>
 
 
