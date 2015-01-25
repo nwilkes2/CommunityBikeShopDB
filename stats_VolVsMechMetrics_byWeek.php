@@ -48,8 +48,8 @@ $totalRows_Recordset1 = mysql_num_rows($Recordset1);
             <table   border="1" cellpadding="1" cellspacing="0">
               <tr bgcolor="#E6E6E6" class="yb_standardCENTERbold">
                 <td height="25" colspan="2">Time Period</td>
-			    <td height="25" colspan="3">All Sales</td>
-			    <td height="25" colspan="3">Number of Bikes</td>
+			    <td height="25" colspan="3">All Sales - Bikes and Parts</td>
+			    <td height="25" colspan="3"># of Bikes Sold</td>
 			    <td height="25" colspan="2">Mechanic Bikes Fixed</td>
 			  </tr>
               <tr valign="top" bgcolor="#99CC33" class="yb_standardCENTER">
